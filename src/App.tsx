@@ -20,7 +20,7 @@ function App() {
         <About/>
         <Art/>
         <Menu/>
-        {/* <div className="h-dvh bg-black"></div> */}
+        <div className="h-dvh bg-black"></div>
       </main>
     </>
   )

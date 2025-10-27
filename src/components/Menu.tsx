@@ -69,6 +69,30 @@ const Menu = () => {
         ease: 'power1.inOut'
       }
     )
+
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: '#menu',
+        start: 'top 30%',
+        end: 'bottom 80%',
+        scrub: true
+      }
+    })
+    .fromTo('#m-right-leaf', {
+      xPercent: 100
+    }, {
+      xPercent: 0,
+      ease: 'power1.inOut'
+    })
+    .fromTo('#m-left-leaf', {
+      yPercent: 100,
+      xPercent: -100
+    }, {
+      yPercent: 0,
+      xPercent: 0,
+      ease: 'power1.inOut'
+    }
+    )
   }, [currentIndex])
 
   useEffect(() => {
