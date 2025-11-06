@@ -4,7 +4,7 @@ import gsap from "gsap";
 
 const Cocktails = () => {
   useGSAP(() => {
-    const parallaxtimeline = gsap.timeline({
+    gsap.timeline({
       scrollTrigger: {
         trigger: '#cocktails',
         start: 'top 30%',
